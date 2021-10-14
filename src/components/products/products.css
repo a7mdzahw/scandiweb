@@ -1,0 +1,36 @@
+.products_page {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.products_page h2 {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  row-gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.card {
+  cursor: pointer;
+  margin-bottom: 40px;
+  width: 386px;
+  height: 444px;
+  padding: 20px;
+  margin: auto 2.5%;
+}
+
+.card img {
+  text-align: center;
+  min-height: 300px;
+  object-fit: contain;
+  max-height: 300px;
+  width: 300px;
+}

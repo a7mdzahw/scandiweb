@@ -1,0 +1,33 @@
+.navbar {
+  display: flex;
+  font-family: "Raleway", sans-serif;
+  width: 80%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.cat_list {
+  text-transform: uppercase;
+  display: flex;
+  gap: 32px;
+}
+.list-item {
+  padding-top: 28px;
+  text-decoration: none;
+  padding-bottom: 32px;
+  font-weight: 700;
+}
+
+a:visited {
+  color: black;
+}
+
+.list-item.active {
+  border-bottom: 2px solid green;
+  color: green;
+}
+
+.image {
+  width: 50px;
+}

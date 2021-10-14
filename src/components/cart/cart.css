@@ -1,0 +1,24 @@
+.cart {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.cart h2 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.left img {
+  width: 200px;
+}
+
+.item {
+  border-top: 2px solid grey;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left {
+  display: flex;
+}
