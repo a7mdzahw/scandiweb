@@ -1,5 +1,6 @@
 .cart {
   width: 80%;
+  min-height: 70vh;
   margin: 0 auto;
 }
 
@@ -21,4 +22,40 @@
 
 .left {
   display: flex;
+}
+
+.check_button {
+  display: block;
+  margin: auto;
+  text-transform: uppercase;
+  font-size: 30px;
+  border: 1px solid black;
+  background: none;
+  padding: 10px 20px;
+  width: 50%;
+  color: black;
+}
+
+.empty_cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.empty_cart p {
+  color: red;
+  font-size: 40px;
+}
+
+.empty_cart button {
+  display: block;
+  cursor: pointer;
+  margin: auto;
+  text-transform: uppercase;
+  font-size: 30px;
+  border: 1px solid black;
+  background: none;
+  padding: 15px 20px;
+  width: 30%;
+  color: black;
 }

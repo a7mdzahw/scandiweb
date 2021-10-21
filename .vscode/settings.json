@@ -1,3 +1,4 @@
 {
-  "cSpell.words": ["reduxjs"]
+  "cSpell.words": ["reduxjs"],
+  "conventionalCommits.scopes": ["cart"]
 }

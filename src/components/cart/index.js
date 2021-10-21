@@ -1,7 +1,7 @@
 import Counter from "components/counter";
 import React, { Component } from "react";
 import { connect } from "react-redux";
-
+import emptyCartIco from "assets/empty-cart.png";
 import "./cart.css";
 
 class Cart extends Component {
@@ -32,6 +32,17 @@ class Cart extends Component {
             );
           })}
         </div>
+        {items.length > 0 ? (
+          <button className="check_button">checkout</button>
+        ) : (
+          <div className="empty_cart">
+            <img width="100px" src={emptyCartIco} alt="empty_cart_icon" />
+            <p>Cart is Empty</p>
+            <button onClick={() => this.props.history.push("/")}>
+              Continue Shopping
+            </button>
+          </div>
+        )}
       </div>
     );
   }

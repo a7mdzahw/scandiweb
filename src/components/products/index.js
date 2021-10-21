@@ -11,9 +11,12 @@ class Products extends Component {
     currency: "USD",
     category: {},
     products: [],
+    error: null,
+    loading: true,
   };
 
   getProducts = () => {
+    this.setState({ loading: true });
     this.props.client
       .query({
         query: get_products,
@@ -24,7 +27,9 @@ class Products extends Component {
           products: data.category.products,
           category: data.category,
         });
-      });
+      })
+      .catch((error) => this.setState({ error: error.message }))
+      .finally(() => this.setState({ loading: false }));
   };
 
   componentDidUpdate(prevProps) {
@@ -38,6 +43,8 @@ class Products extends Component {
   }
 
   render() {
+    if (this.state.loading) return "loading...";
+    if (this.state.error) return <div>error</div>;
     return (
       <div class="products_page">
         <h2>{this.state.category.name}</h2>
